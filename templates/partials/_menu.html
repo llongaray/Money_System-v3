@@ -1,0 +1,66 @@
+{% load static %}
+
+<aside id="menu">
+    <section class="logo">
+        <!-- Aqui vai o logotipo da empresa -->
+        <img src="{% static 'img\logo-7YTtrpDue-transformed.png' %}" alt="Logo">
+        <div id="menu-toggle">
+            <i class="fas fa-bars"></i> <!-- Ícone de sanduíche -->
+        </div>
+    </section>
+    <section class="options">
+        <h2>
+            <div>
+                <i class="fas fa-home"></i> <!-- Ícone de casa -->
+                <span class="title">Início</span>
+            </div>
+            <i class="fas fa-chevron-down"></i> <!-- Ícone de seta para baixo -->
+        </h2>
+        <ul>
+            <li><a class="menu-link" href="{% url 'relatorio_geral' %}">Relatório Geral</a></li>
+            <li>Relatório de Ramais</li>
+        </ul>
+        <h2>
+            <div>
+                <i class="fas fa-desktop"></i> <!-- Ícone de computador -->
+                <span class="title">TI</span>
+            </div>
+            <i class="fas fa-chevron-down"></i> <!-- Ícone de seta para baixo -->
+        </h2>
+        <ul>
+            <li>Relatório de CHIPs</li>
+            <li>Planilha Pass-IP</li>
+            <li>Planilha de E-mails</li>
+        </ul>
+        <h2>
+            <div>
+                <i class="fas fa-users"></i> <!-- Ícone de pessoas -->
+                <span class="title">Recursos Humanos</span>
+            </div>
+            <i class="fas fa-chevron-down"></i> <!-- Ícone de seta para baixo -->
+        </h2>
+        <ul>
+            <li>Lista de Funcionários</li>
+            <li>Lista por Salários</li>
+            <li>Lista por Benefícios</li>
+            <li>Formulário para Funcionários</li>
+        </ul>
+        <h2>
+            <div>
+                <i class="fas fa-cogs"></i> <!-- Ícone de engrenagens -->
+                <span class="title">Outros</span>
+            </div>
+            <i class="fas fa-chevron-down"></i> <!-- Ícone de seta para baixo -->
+        </h2>
+        <ul>
+            <li>Lista por Setor</li>
+            <li>Lista por Ramal</li>
+            <li>Acesso Painel Admin</li>
+        </ul>
+    </section>
+    
+    <footer style="display: flex; flex-direction: column;">
+        <p><a id="github-link" href="https://github.com/llongaray/" style="color: rgb(146, 70, 233);">GitHub</a></p>
+        <p id="copyright"></p>
+    </footer>
+</aside>
